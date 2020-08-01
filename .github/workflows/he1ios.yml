@@ -1,0 +1,101 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Run a one-line script
+      run: echo Hello, world!
+
+    # Runs a set of commands using the runners shell
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+#node js
+- name: Setup Node.js environment
+  uses: actions/setup-node@v1.4.2
+  with:
+    # Set always-auth in npmrc
+    always-auth: # optional, default is false
+    # Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0
+    node-version: # optional, default is 10.x
+    # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN
+    registry-url: # optional
+    # Optional scope for authenticating against scoped registries
+    scope: # optional
+    # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
+    
+#GO
+- name: Setup Go environment
+  uses: actions/setup-go@v2.0.3
+  with:
+    # The Go version to download (if necessary) and use. Supports semver spec and ranges.
+    go-version: # optional
+    # Whether to download only stable versions
+    stable: # optional, default is true
+#Close stale issues
+- name: Close Stale Issues
+  uses: actions/stale@v3.0.6
+  with:
+    # Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`.
+    repo-token: 
+    # The message to post on the issue when tagging it. If none provided, will not mark issues stale.
+    stale-issue-message: # optional
+    # The message to post on the pr when tagging it. If none provided, will not mark pull requests stale.
+    stale-pr-message: # optional
+    # The number of days old an issue can be before marking it stale.
+    days-before-stale: # optional, default is 60
+    # The number of days to wait to close an issue or pull request after it being marked stale. Set to -1 to never close stale issues.
+    days-before-close: # optional, default is 7
+    # The label to apply when an issue is stale.
+    stale-issue-label: # optional, default is Stale
+    # The labels to apply when an issue is exempt from being marked stale. Separate multiple labels with commas (eg. "label1,label2")
+    exempt-issue-labels: # optional, default is 
+    # The label to apply when a pull request is stale.
+    stale-pr-label: # optional, default is Stale
+    # The labels to apply when a pull request is exempt from being marked stale. Separate multiple labels with commas (eg. "label1,label2")
+    exempt-pr-labels: # optional, default is 
+    # Only issues or pull requests with all of these labels are checked if stale. Defaults to `[]` (disabled) and can be a comma-separated list of labels.
+    only-labels: # optional, default is 
+    # The maximum number of operations per run, used to control rate limiting.
+    operations-per-run: # optional, default is 30
+    # Remove stale labels from issues when they are updated or commented on.
+    remove-stale-when-updated: # optional, default is true
+    # Run the processor in debug mode without actually performing any operations on live issues.
+    debug-only: # optional
+    version: # optional
+    
+#NET Core Sdk
+- name: Setup .NET Core SDK
+  uses: actions/setup-dotnet@v1.5.0
+  with:
+    # SDK version to use. Examples: 2.2.104, 3.1, 3.1.x
+    dotnet-version: # optional
+    # Optional package source for which to set up authentication. Will consult any existing NuGet.config in the root of the repo and provide a temporary NuGet.config using the NUGET_AUTH_TOKEN environment variable as a ClearTextPassword
+    source-url: # optional
+    # Optional OWNER for using packages from GitHub Package Registry organizations/users other than the current repository's owner. Only used if a GPR URL is also provided in source-url
+    owner: # optional
+    # Optional NuGet.config location, if your NuGet.config isn't located in the root of the repo.
+    config-file: # optional
+    # Deprecated. Use dotnet-version instead. Will not be supported after October 1, 2019
+    version: # optional

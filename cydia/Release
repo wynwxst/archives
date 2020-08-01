@@ -1,0 +1,20 @@
+Origin: He1ios
+Label: He1ios Hacks
+Suite: stable
+Version: 1.0
+Codename: com.he1ios.he1iosrepo
+Architectures: iphoneos-arm
+Components: main
+Description: He1ios Hacks
+MD5Sum:
+ ce355700fef88a4a9ba7c64129ce332f 32407 Packages
+ 11423c66c944be6186f5ce7bd2052484 8524 Packages.gz
+ 2646d49ce8fbea40be0d84e9ba7d2f71 8084 Packages.bz2
+SHA1:
+ d8dc13371c3014b92fd09eea6a219b587bcd8a29 32407 Packages
+ cf0130234ccab04282527e6f8e34837f7a4353ca 8524 Packages.gz
+ a82026567fe3bb99ac38abf4f3ae705c8ac6b8e3 8084 Packages.bz2
+SHA256:
+ a7b787f85e5789885f5774fcfe9b23f329a7feb49204046dfd68fb4c5b75ef96 32407 Packages
+ e716c641ea19492fa83b5eee452287b05a1e3dae1e1b925e12c0b85c8024e67b 8524 Packages.gz
+ 639e60e53d284d08ac796d121896da8e1655920d672c30953e5390569233ead9 8084 Packages.bz2
