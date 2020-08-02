@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <html>
+        <head>
+            <title>AppStore++</title>
+            <link rel="stylesheet" type="text/css" href="/menes.css"/>
+            <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+        </head>
+        
+        <body class="pinstripe">
+            
+            <panel>
+                <div class="header" style="color:black">
+                    <img src="appstoreplus/icon.png" width="59" height="60"/>
+                    <div>
+                        <h1>AppStore++</h1>
+                        <h2>by CokePokes</h2>
+                        <h2> </h2>
+                    </div>
+                </div>
+                
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Allows you to downgrade/upgrade apps in the AppStore, block updates, bypass 200MB download limit, disable search ads &amp; disable app thinning.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Requires</label>
+                <fieldset style="clear:both">
+                    
+                    <div style="background:#FEE; -moz-border-radius-bottomleft: 9px; -webkit-border-bottom-left-radius: 9px; -moz-border-radius-bottomright: 9px; -webkit-border-bottom-right-radius: 9px; -moz-border-radius-topleft: 9px; -webkit-border-top-left-radius: 9px; -moz-border-radius-topright: 9px; -webkit-border-top-right-radius: 9px;">
+                        
+                        <p>iOS 11.x-13.5</p>
+                        
+                    </div>
+                </fieldset>
+                
+                
+                <label>Changes in 0.9.12</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Reworked itunesstored hook to not hit my server as hard for logging, if everyone installs this the server might not go down as much.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.10</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed preferences on every iOS version by using NSUserDefaults.<p/>
+                        <p>Fixed blocking updates on iOS 13.5.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.10</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixes another crash and may fix many other issues some users have reported.<p/>
+                        <p>Loading server stuff on a backgrounded thread so thats good, may fix some crashes too.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-11</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed crashes in itunesstored when using Update All button and some other bug fixes.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-10</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed badge count for blocked updates..not sure if this works on iOS12.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-9</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed preferences on unc0ver v4.3.1 on iOS 12.4 &amp; below. Apparently the unc0ver version I was using nuked preferences. Like what in the actual fuck. I miss the old jailbreak when things werent wishy washy &amp; developing things just worked out of the box. I really need to write my own preferences XPC daemon instead of checking conditions on the device and writing preferences in different directories.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-6</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>REWORKED PREFERENCES AGAIN. IF IT DOESNT WORK THEN TOO BAD.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-5</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Reworked the preferences yet again..fml<p/>
+                        <p>Should fix blocking on Chinese AppStore<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-4</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixes lag when opening Account/Updates &amp; AppStore++ settings<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-3</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Now uses Cephei instead of rocketbootstrap<p/>
+                        <p>Fixed a crash when holding Arcade item buttons<p/>
+                        <p>Auto pastes identifier when using Manual Install<p/>
+                        <p>Please respring after installing!<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9-2</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Reworked rocketbootstrap implementation by seperating preferences into 2 different files<p/>
+                        <p>Reenabled Disable App Thinning option<p/>
+                        <p>Bug fixes related to rocketbootstrap<p/>
+
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.9</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed alot of issues on unc0ver hopefully/blocking updates<p/>
+                        <p>Added Manage Installed Apps section<p/>
+                        <p>Added app icons and version installed in Blocked Updates list<p/>
+                        <p>Added rocketbootstrap dependency because unc0ver doesnt fuck with entitlements like every other jailbreak. This is why i have issues developing for unc0ver. Its a jailbreak developers nightmare. I spent hours changing my code to accommodate the sandbox restrictions. fml.<p/>
+                        <p>Bug fixes.<p/>
+                        
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.8-6</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed blocking issue introduced in v0.9.8-5.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.8-5</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Added better method for hiding updates. Please unblock apps and reblock on iOS13+.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.8-4</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed hiding updates on iOS13.x<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.8-3</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Full downgrade support on A12/13 devices.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.8-2</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Partial A12/13 support. Its whatever.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.7</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixes a freeze when my website is unresponsive.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.6-1</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixes a crash when trying to downgrade certain apps in the AppStore.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.6</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>No longer need to navigate to the app depiction on iOS 12.2.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.4</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>iOS 12.2 support. Requires to go to the app depiction before downgrading.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.2</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Potentially fixed an issue that opens the target app.<p/>                        
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9.1-1</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Added option to disable app thinning.<p/>
+                        <p>Added list of Blocked Updates in tweak preferences. (Hold the account button to access)<p/>
+
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-14</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixes a crash when using "Manual Install." May fix a few other bugs with downgrading.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-13</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed an issue where app lookup did not work in other countries. If you get an error with 'couldn't be opened', try opening the app description first before downgrading.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-12</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Behind the scene bugfixes you prolly won't notice.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-11</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Prolly fixes a sh*t ton of bugs for new users since preferences weren't being saved. Sooooo yea this explains why Block Updates wasn't working for some of you and prolly some other wild bugs that relied on prefs to communicate with the itunesstored daemon. My brad.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-10</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Added preference for 3G/4G Unrestrictor for 150MB+ downloads<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-9</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Added Preferences<p/>
+                        <p>Added popup tips!<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-8</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed an issue where Block Update was not working on some devices.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-6</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed an issue where downgrade never was initiated.<p/>
+                        <p>Fixed an issue where user's manual installs were getting logged to my server leading to bad update info for others.<p/>
+                        <p>Note: If you're tired of downgrades requiring passcode/faceID, download any app normally once.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9-3</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Cleaned code that could have caused issues downgrading.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.9</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Manage apps from any Buy/Open/Get button, even from Updates tab. Finally.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.8-2</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fix for Blocking Updates on iOS11<p/>
+                        <p>Fixed postrm script to unload tweak from daemons.<p/>
+                        
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.8</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Added Option to Block Updates<p/>
+                        <p>(Not sure if Block Updates works with Auto Update enabled. Report back!)<p/>
+                        
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.7-5</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed crash on iPad<p/>
+                        <p>Potentially fixed the tweak from not loading on some devices.<p/>
+
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.7-4</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>arm64e support (A12)<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.7-2</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Fixed an issue where versions wouldn't load from server.<p/>
+                        <p>Finally squashed the bug that opened the target app.<p/>
+                    </div>
+                </fieldset>
+                
+                <label>Changes in 0.6-2</label>
+                <fieldset style="clear:both">
+                    <div>
+                        <p>Changed hold time to 0.4.<p/>
+                        <p>Fixed a bug that opened the target app when downgrading.<p/>
+                    </div>
+                </fieldset>
+                
+                <div class="horizontal-scroll-wrapper" id="scroller">
+                    <div class="horizontal-scroll-area" style="width:235px">
+                        <img src="appstoreplus/screenshot1.jpeg" />
+                    </div>
+                    <div class="horizontal-scroll-pips">
+                    </div>
+                </div>
+                
+                <fieldset>
+                    <a href="https://twitter.com/CokePokes">
+                        <img class="icon" src="http://cache.saurik.com/cydia/icon/twitter.png"/>
+                        <div>
+                            <label>Find CokePokes on Twitter</label>
+                        </div>
+                    </a>
+                </fieldset>
+                
+            </panel>
+            
+        </body>
+    </html>
